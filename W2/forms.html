@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Forms page</h1>
+
+<form action="">
+    <fieldset>
+        <label>Fullname: </label>
+        <input type="text" placeholder="Enter your fullname" readonly>
+    </fieldset>
+    <fieldset>
+        <label>Email: </label>
+        <input type="email" required>
+    </fieldset>
+    <fieldset>
+        <label>Password: </label>
+        <input type="password" pattern="^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\S+$).{6,}$">
+    </fieldset>
+    <fieldset>
+        <label>Phone: </label>
+        <input type="tel" placeholder="+7 777 777 77 77">
+    </fieldset>
+    <fieldset>
+        <label>Number: </label>
+        <input type="number">
+    </fieldset>
+
+    <fieldset>
+        <label>Radio: </label>
+        <input type="radio">
+    </fieldset>
+
+    <fieldset>
+        <label>Checkbox: </label>
+        <input type="checkbox">
+    </fieldset>
+
+    <fieldset>
+        <label>City: </label>
+        <select>
+            <option>Almaty</option>
+            <option>Astana</option>
+            <option>Shymkent</option>
+        </select>
+    </fieldset>
+
+    <fieldset>
+        <label>Bio: </label>
+        <textarea cols="20" rows="30"></textarea>
+    </fieldset>
+
+    <fieldset>
+        <label>Upload CV: </label>
+        <input type="file">
+    </fieldset>
+
+    <fieldset>
+        <label>HTML5</label>
+        <input type="color">
+        <input type="date">
+        <input type="datetime-local">
+        <input type="time">
+        <input type="month">
+        <input type="week">
+        <input type="range">
+        <input type="search">
+        <input type="url">
+
+    </fieldset>
+    <input type="submit">
+    <input type="reset">
+
+
+
+</form>
+</body>
+</html>
