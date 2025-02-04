@@ -1,0 +1,35 @@
+<h1>{{title}}</h1>
+
+
+<p>{{num + 10}}</p>
+
+
+<ul>
+  <li *ngFor="let number of numbers; let i = index;">{{i + 1}}) {{number}}</li>
+</ul>
+
+
+<ul>
+  <li *ngFor="let student of students; let i = index;">{{i + 1}}) {{student.id}} - {{student.name}}
+    - {{student.gpa}}</li>
+</ul>
+
+
+<p *ngFor="let student of students; let i = index;">{{i + 1}}) {{student.id}} - {{student.name}}
+  - {{student.gpa}}</p>
+
+
+<p *ngIf="isLoading">New paragraph</p>
+<button (click)="btnClick()">Show paragraph</button>
+
+
+<fieldset>
+  <input type="text" [(ngModel)]="inputData">
+  <button (click)="addItem()">Add item</button>
+</fieldset>
+
+<ul>
+  <li *ngFor="let item of items">{{item}}</li>
+</ul>
+
+
