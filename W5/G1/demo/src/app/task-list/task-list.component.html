@@ -1,0 +1,23 @@
+<fieldset>
+  <input type="text" [(ngModel)]="task.title"/>
+  <button (click)="addTask()">Add Task</button>
+</fieldset>
+
+<p>New tasks</p>
+<ul>
+  <li *ngFor="let t of taskList">
+    <app-task-item [task]="t"
+                   (remove)="removeTask($event)"
+                   (done)="onDoneChanged($event)"></app-task-item>
+  </li>
+</ul>
+
+
+<p>Done tasks</p>
+<ul>
+  <li *ngFor="let t of doneTaskList">
+    <app-task-item [task]="t"
+                   (remove)="removeTask($event)"
+                   (done)="onDoneChanged($event)"></app-task-item>
+  </li>
+</ul>
