@@ -1,0 +1,10 @@
+<fieldset>
+  <input type="text" placeholder="Title" [(ngModel)]="newPost.title"/>
+  <textarea placeholder="Description" [(ngModel)]="newPost.body"></textarea>
+  <button (click)="addPost()">Add post</button>
+</fieldset>
+
+<h3 *ngIf="!loaded">Loading...</h3>
+<ul *ngIf="loaded">
+  <li *ngFor="let post of posts"><a routerLink="/posts/{{post.id}}">{{post.id}} {{post.title}}</a></li>
+</ul>
